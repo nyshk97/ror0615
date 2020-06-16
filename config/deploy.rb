@@ -6,7 +6,7 @@ set :repo_url, "git@github.com:nyshk97/ror0615.git"
 set :deploy_to, "/var/www/html/namatsuba"
 
 set :rbenv_type, :system
-set :rbenv_ruby, File.read('.ruby-version').strip
+set :rbenv_ruby, '2.7.1'
 set :rbenv_path, '/usr/local/rbenv'
 
 
