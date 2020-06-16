@@ -7,7 +7,8 @@ set :deploy_to, "/var/www/html/namatsuba"
 
 set :rbenv_type, :system
 set :rbenv_ruby, File.read('.ruby-version').strip
-set :rbenv_prefix, "RBENV_ROOT=#{fetch(:rbenv_path)} #{fetch(:rbenv_path)}/bin/rbenv exec"
+set :rbenv_path, '/usr/local/rbenv'
+
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
